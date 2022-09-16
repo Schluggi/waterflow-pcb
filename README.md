@@ -9,6 +9,9 @@
 I love the idea of GreatScott`s [Online Water Tracker](https://www.youtube.com/watch?v=BNK92ep8DhY), but unfortunately
 it was really difficult for me to implement his circuit on a perfboard, so I designed a cheap PCB for this.
 
+> Please notice, that this board does not replace/included the charge circuit (TP4056) or the boost converter. It
+> only replaces the big ESP circuit.
+
 The PCB has also some improvements:
 - Resistor for the status LED is placed on the PCB
 - Connection terminals to easily (dis)connect everything
