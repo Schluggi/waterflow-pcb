@@ -1,0 +1,8 @@
+# IDE
+.idea
+
+# kicad
+kicad/fp-info-cache
+kicad/waterflow-backups/
+kicad/waterflow.csv
+kicad/waterflow.xml
