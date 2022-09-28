@@ -946,10 +946,17 @@
     )
   )
 
+  (gr_line (start 100.845 60.25) (end 100.845 62) (layer "F.SilkS") (width 0.15) (tstamp 2141c75c-5c14-49bf-942d-3746ab61b706))
+  (gr_line (start 97.345 60.25) (end 100.845 60.25) (layer "F.SilkS") (width 0.15) (tstamp 42bbebaa-9bdc-4a74-b31b-ca0120989c48))
+  (gr_line (start 97.345 62) (end 97.345 60.25) (layer "F.SilkS") (width 0.15) (tstamp 49fa48da-6dbb-4137-8bad-0fd869f11151))
+  (gr_line (start 100.845 62) (end 97.345 62) (layer "F.SilkS") (width 0.15) (tstamp 906fe4e1-427b-4e69-9bf7-f5ab9363faa2))
   (gr_line (start 82.15 25.86) (end 82.175 91.61) (layer "Edge.Cuts") (width 0.1) (tstamp 06406b60-11c6-4251-8905-e273e6c016e3))
   (gr_line (start 120.175 91.61) (end 120.15 25.86) (layer "Edge.Cuts") (width 0.1) (tstamp 0936d37f-cb01-4d94-8d45-074111f65941))
   (gr_line locked (start 120.15 25.86) (end 82.15 25.86) (layer "Edge.Cuts") (width 0.1) (tstamp 19aef17a-d165-48bd-89ac-e8607cd31a10))
   (gr_line (start 120.175 91.61) (end 82.175 91.61) (layer "Edge.Cuts") (width 0.1) (tstamp de1667a7-3fd6-49d6-8175-58ec9acded1c))
+  (gr_text "USB" (at 99.095 61.25) (layer "F.SilkS") (tstamp 190b516c-eafe-4260-a33e-1efc8512da4c)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_text "PULSE" (at 91.01 77.45) (layer "F.SilkS") (tstamp 1c75231f-9e87-40ce-ab72-9bd76f65a77a)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -5235,6 +5242,20 @@
         (xy 82.574661 26.1605)
         (xy 119.725661 26.1605)
       )
+    )
+  )
+  (group "" (id 7d1ae0e0-3f48-466d-8b6d-d9aa51d7d16b)
+    (members
+      2141c75c-5c14-49bf-942d-3746ab61b706
+      42bbebaa-9bdc-4a74-b31b-ca0120989c48
+      49fa48da-6dbb-4137-8bad-0fd869f11151
+      906fe4e1-427b-4e69-9bf7-f5ab9363faa2
+    )
+  )
+  (group "" (id a03b5ad8-f9fd-4108-9b7b-cb52db29b27a)
+    (members
+      190b516c-eafe-4260-a33e-1efc8512da4c
+      7d1ae0e0-3f48-466d-8b6d-d9aa51d7d16b
     )
   )
   (group "" (id b8a9d3f4-7898-48b7-b18a-9c3d36c43d1c)
