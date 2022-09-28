@@ -960,7 +960,7 @@
   (gr_text "PULSE" (at 91.01 77.45) (layer "F.SilkS") (tstamp 1c75231f-9e87-40ce-ab72-9bd76f65a77a)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "3V3\n" (at 101.17 77.45) (layer "F.SilkS") (tstamp 37ecdf0d-c669-4b40-b0ab-bac2b5ab5ce5)
+  (gr_text "VCC" (at 101.17 77.45) (layer "F.SilkS") (tstamp 37ecdf0d-c669-4b40-b0ab-bac2b5ab5ce5)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "+" (at 101.4 37.5) (layer "F.SilkS") (tstamp 3867613d-b701-413a-acd6-b833a7207fb1)
