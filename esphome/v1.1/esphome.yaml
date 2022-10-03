@@ -1,0 +1,108 @@
+esphome:
+  name: waterflow-shower
+
+esp8266:
+  board: d1_mini
+
+substitutions:
+  prefix: Bathroom Shower
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "<secret>"
+
+ota:
+  password: "<secret>"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  ap:
+    ssid: "Waterflow-Shower"
+    password: "12345678"
+
+captive_portal:
+
+sensor:
+  # https://esphome.io/components/sensor/ntc.html
+  - platform: ntc
+    sensor: resistance_sensor
+    calibration:
+        # do your own measurements and change it here
+        - 159.910kOhm -> 0°C
+        - 52kOhm -> 20°C
+        - 3.090kOhm -> 100°C
+    name: ${prefix} Water Temperature
+
+  # https://esphome.io/components/sensor/resistance.html
+  - platform: resistance
+    id: resistance_sensor
+    sensor: source_sensor
+    configuration: DOWNSTREAM
+    reference_voltage: 3.3V
+    resistor: 22kOhm
+
+  # https://esphome.io/components/sensor/adc.html
+  - platform: adc
+    id: source_sensor
+    pin: A0
+    filters:
+      # adjust these values if the log shows other values then you can measure
+      - multiply: 3.3
+      - offset: -0.1
+
+  # https://esphome.io/components/sensor/pulse_counter.html
+  - platform: pulse_counter
+    pin: D6
+    update_interval : 1s
+    unit_of_measurement: 'L/min'
+    name: ${prefix} Water Meter
+    filters:
+      - multiply: 0.001835  # (400 pulses per L -> 1/545=0.001835)
+    total:
+      name: ${prefix} Water Meter Pulses Total
+
+switch:
+  # https://esphome.io/components/sensor/ntc.html#self-heating
+  - platform: gpio
+    pin: D0
+    id: ntc_vcc
+
+  # https://esphome.io/components/binary_sensor/gpio.html
+  - platform: gpio
+    pin: D2
+    id: esp_power_off
+    restore_mode: ALWAYS_OFF
+
+binary_sensor:
+  # https://esphome.io/components/binary_sensor/gpio.html
+  - platform: gpio
+    pin: D7
+    name: ${prefix} Water Flow
+    on_release:
+      - delay: 1s
+      - switch.turn_on: esp_power_off
+    filters:
+      - delayed_off: 10s
+
+button:
+  - platform: template
+    name: ${prefix} Power Off
+    id: my_button
+    icon: "mdi:power"
+    on_press:
+      - switch.turn_on: esp_power_off
+
+interval:
+  # https://esphome.io/components/sensor/ntc.html#self-heating
+  - interval: 10s
+    then:
+      - switch.turn_on: ntc_vcc
+      - delay: 1s
+      - component.update: source_sensor
+      - delay: 1s
+      - switch.turn_off: ntc_vcc

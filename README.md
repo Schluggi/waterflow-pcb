@@ -4,6 +4,8 @@
 <a href="https://www.buymeacoffee.com/schluggi" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/white_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
 > __WARNING!__ The PCB is not tested yet. I'll remove this info after my order arrived and got tested.
+> 
+> **Update**: after testing v1.0: It does work but only with a lot of modifications. So lets test v1.1...
 
 ## Description
 I love the idea of GreatScott`s [Online Water Tracker](https://www.youtube.com/watch?v=BNK92ep8DhY), but unfortunately
@@ -18,8 +20,9 @@ The PCB has also some improvements:
 - Extra connection for waterflow-sensors with temperature sensor
 
 ## Images
-[<img src="images/v1.0/pcb_3d.jpg" width="495"/>](images/v1.0/pcb_3d.jpg)
-[<img src="images/v1.0/pcb.jpg" width="400"/>](images/v1.0/pcb.jpg)
+[<img src="images/v1.1/pcb_3d.png" width="495"/>](images/v1.1/pcb_3d.png)
+[<img src="images/v1.1/pcb.png" width="400"/>](images/v1.1/pcb.png)
+[<img src="images/v1.1/schematic.png" width="800"/>](images/v1.1/schematic.png)
 
 ## How to order?
 Before you order the PCB, make sure you had all components need. You can find them
@@ -34,7 +37,7 @@ printed on the PCB (for aesthetic reasons).
 
 [<img src="images/order_jlcpcb.jpg" width="1000"/>](images/order_jlcpcb.jpg)
 
-After all you got 5 PCBs for less than 10€.
+After all you got 5 PCBs for less than 10€. 
 
 ## Questions
 Just open an issue :)
