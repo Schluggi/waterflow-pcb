@@ -2,7 +2,9 @@
 .idea
 
 # kicad
+kicad/#auto_saved_files#
 kicad/fp-info-cache
+kicad/manufactoring/
 kicad/waterflow-backups/
 kicad/waterflow.csv
 kicad/waterflow.xml
