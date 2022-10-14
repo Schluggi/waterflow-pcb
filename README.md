@@ -3,10 +3,6 @@
 
 <a href="https://www.buymeacoffee.com/schluggi" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/white_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
-> __WARNING!__ The PCB is not tested yet. I'll remove this info after my order arrived and got tested.
-> 
-> **Update**: after testing v1.0: It does work but only with a lot of modifications. So lets test v1.1...
-
 ## Description
 I love the idea of GreatScott`s [Online Water Tracker](https://www.youtube.com/watch?v=BNK92ep8DhY), but unfortunately
 it was really difficult for me to implement his circuit on a perfboard, so I designed a cheap PCB for this.
