@@ -11,9 +11,8 @@ it was really difficult for me to implement his circuit on a perfboard, so I des
 > only replaces the big ESP circuit.
 
 The PCB has also some improvements:
-- Resistor for the status LED is placed on the PCB
 - Connection terminals to easily (dis)connect everything
-- Extra connection for waterflow-sensors with temperature sensor
+- Extra connection for a waterflow-sensors [with a temperature sensor](https://smile.amazon.de/gp/product/B07QNN1N7W/ref=ppx_yo_dt_b_asin_title_o04_s01)
 
 ## Images
 [<img src="images/v1.1/pcb_3d.png" width="495"/>](images/v1.1/pcb_3d.png)
